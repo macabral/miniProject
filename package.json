@@ -1,0 +1,28 @@
+{
+  "name": "miniProject",
+  "version": "1.0.0",
+  "description": "App miniProject",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "win64": "electron-packager . miniProject --win --ia32  --icon=icons/win/256x256_WVw_1.ico --prune=true --overwrite",
+    "icon": "./node_modules/.bin/electron-icon-maker --input=src/app/res/miniProject.png --output= ./app/res"
+  },
+  "author": "MASC, 2020",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/register": "^7.11.5",
+    "electron": "^10.1.2",
+    "electron-icon-maker": "0.0.5",
+    "electron-packager": "^15.1.0",
+    "gulp-babel": "^8.0.0"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-uglify-es": "^2.0.0",
+    "readable-stream": "^3.6.0"
+  }
+}

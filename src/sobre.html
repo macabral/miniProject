@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+    body {
+        margin:0px;
+        padding-top:10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+    }
+    .logo {
+        background-color:indigo;
+        padding-top: 7px;
+        padding-left: 7px;
+    }
+</style>
+</head>
+<body>
+
+<h1>
+    <div class="logo">
+        <img src="res/logo_decea.png">
+    </div>
+    <br />
+    <img src="res/miniProject.png" style="width: 18px; height:18px;">&nbsp; miniProject - versão 1.01
+</h1>
+<hr />
+
+<p>Aplicativo para a elaboração de redes de projetos do SIGA</p>
+<p>Para utilizar o miniProject exporte a rede do SIGA no formato miniProject e altere a rede utilizando o aplicativo miniProject instalado em seu computador. 
+Depois carregue a rede utilizando a opção de importar no SIGA.</p>
+
+<h3>Aplicativo miniProject:</h3>
+
+<li>carrega/salva a rede do SIGA no formato JSON com a extensão "mpjt".</li>
+<li>permite a alteração da rede no grid ou editando a tarefa.</li>
+<li>apresentação da rede no formato de Gantt.</li>
+<li>lista de recursos.</li>
+
+<h3>Principais características:</h3>
+<li>a duração da tarefa inclui a data de início e término da tarefa.</li>
+<li>marcos de tarefas com duração 0 (zero).</li>
+<li>nesta versão o miniProject somente suporta tarefas do tipo TI (Término - Início). </li>
+<li>o miniProject suporta tarefas com latência (lag) - positivas ou negativas.</li>
+<li>calculo automático de peso das tarefas pai.</li>
+<li>tarefas concluídas (100%) não podem ser alteradas (ou criar tarefas dependentes).</li>
+
+<h3>Como utilizar o miniProject:</h3>
+<li>para carregar/salvar a rede utilize o menu "Abrir rede" e "Salvar rede".</li>
+<li>utilize os botões na barra de botões para criar, excluir e identar tarefas, alterar a visualização e exibir recursos.</li>
+<li>você pode alterar a rede no grid de tarefas ou clicando em editar tarefas.</li>
+<li>para adicionar um marco é necessário editar a tarefa e atribuir duração 0 (zero) para a tarefa.</li>
+<li>para criar dependências entre tarefas utilize a coluna "depen" ou diretamente no gráfico Gantt.</li>
+<li>para criar latência (lag) na coluna "depen" informe a tarefa dependente  ":" + quantidade de dias. Ex: 5:10 - a tarefa corrente é dependente da tarefa 5 com um lag de 10 dias ou 5:-10 a tarefa iniciará 10 dias antes.</li>
+<li>para atribuir pesos utilize a coluna "peso". O cálculo de peso das tarefas pai é realizado automaticamente.</li>
+<li>para incluir recursos selecione recursos na barra de opções e clique no botão (+). </li>
+
+<h3>Atualização de versão</h3>
+<p>Verifique no wiki SIGA a versão mais recente do miniProject.</p>
+<p>Versão 1.01 - nov/2020<br \>
+- recalcular pesos quando excluir tarefas<br/>
+- não permitir alterar a data de início, fim e duração de tarefas pai quando utiliza o Editor de tarefas</p>
+<p>Versão 1.0 - out/2020</p>
+</body>
+</html>
+
+<h3>Comunicação de problemas</h3>
+<p>Por favor, utilize o email <b>suportesiga@decea.gov.br</b> para comunicar problemas na utilização do miniProject. Insira no email informações úteis para reproduzir o problema indicado e anexo o arquivo do projeto.</p>
+<h3>Informações sobre a Licença</h3>
+
+<p>O miniProject utiliza a biblioteca jQueryGantt disponível em http://github.com/robicch/jQueryGantt/ com licenciamento MIT licensed (https://opensource.org/licenses/MIT).</p>
+<p>
+/*<br/>
+ Copyright (c) 2012-2018 Open Lab<br/>
+ Written by Roberto Bicchierai and Silvia Chelazzi http://roberto.open-lab.com<br/>
+ Permission is hereby granted, free of charge, to any person obtaining<br/>
+ a copy of this software and associated documentation files (the<br/>
+ "Software"), to deal in the Software without restriction, including<br/>
+ without limitation the rights to use, copy, modify, merge, publish,<br/>
+ distribute, sublicense, and/or sell copies of the Software, and to<br/>
+ permit persons to whom the Software is furnished to do so, subject to<br/>
+ the following conditions:<br/>
+ <br/>
+ The above copyright notice and this permission notice shall be<br/>
+ included in all copies or substantial portions of the Software.<br/>
+ <br/>
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,<br/>
+ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF<br/>
+ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND<br/>
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE<br/>
+ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION<br/>
+ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION<br/>
+ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.<br/>
+ */<br/>
+ 
+</p>
